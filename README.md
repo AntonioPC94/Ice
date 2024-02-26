@@ -66,6 +66,8 @@ Si hacemos un "sysinfo", veremos que la arquitectura del sistema operativo que e
 
 Para ganar estabilidad en el sistema objetivo, vamos a migrar el proceso de la "Meterpreter" a uno de 64 bits. Para ello, utilizaremos el siguiente módulo de Metasploit: 
 
+post/windows/manage/migrate
+
 
 
 
