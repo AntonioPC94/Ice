@@ -46,7 +46,7 @@ Primeramente, vamos a buscar en la página "cvedetails" información sobre la ap
 
 ![ICE10]()
 
-Ahora que sabemos esto, nos iremos a Metasploit y buscaremos el CVE que obtuvimos anteriormente.
+Ahora que sabemos esto, nos iremos a Metasploit, buscaremos el CVE que obtuvimos anteriormente y seleccionaremos el único exploit que nos aparece.
 
 ![ICE11]()
 
