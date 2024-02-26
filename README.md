@@ -22,4 +22,50 @@ Como se observa en las imágenes anteriores, los servicios mencionados son vulne
 
 Ahora vamos a iniciar Metasploit para comenzar a explotar las distintas vulnerabilidades que hemos encontrado en el sistema objetivo.
 
+Una vez iniciado, buscaremos la vulnerabilidad encontrada en el servicio SMB y configuraremos las distintas opciones para posteriormente lanzar el exploit:
+
+![ICE6]()
+
+En este caso, solo configuraremos el RHOSTS y el payload:
+
+![ICE7]()
+
+Una vez configurado el exploit, lo lanzaremos con "run".
+
+![ICE8]()
+
+Como observamos en la imagen anterior, hemos obtenido shell. Ahora haremos un "whoami" para ver qué tipo de usuario somos en el sistema.
+
+![ICE9]()
+
+Somos "nt authority\system", la mayor autoridad del sistema.
+
+A continuación, vamos a mandar la sesión que hemos obtenido a segundo plano para ver qué podemos hacer ahora con la aplicación vulnerable que encontramos anteriormente.
+
+Primeramente, vamos a buscar en la página "cvedetails" información sobre la aplicación Icecast. Como observamos en la siguiente imagen, existe una vulnerabilidad cuyo CVE es CVE-2004-1561, que te permite realizar un desbordamiento de búfer en la máquina vulnerable.
+
+![ICE10]()
+
+Ahora que sabemos esto, nos iremos a Metasploit y buscaremos el CVE que obtuvimos anteriormente.
+
+![ICE11]()
+
+En este caso, solo configuraremos el RHOSTS:
+
+![ICE12]()
+
+Una vez configurado el exploit, lo lanzaremos con "run".
+
+![ICE13]()
+
+Como observamos en la imagen anterior, hemos obtenido shell y hemos conseguido acceso como usuario "Dark-PC\\Dark".
+
+Bien, ya tenemos acceso a la máquina mediante dos vías, pero ahora nos vamos a centrar en la segunda shell que hemos conseguido, ya que lo que queremos es llegar a ese "NT AUTHORITY SYSTEM" desde esta.
+
+Si hacemos un "sysinfo", veremos que la arquitectura del sistema operativo que está corriendo en la máquina objetivo, es de 64 bits. 
+
+Para ganar estabilidad en el sistema objetivo, vamos a migrar el proceso de la "Meterpreter" a uno de 64 bits. Para ello, utilizaremos el siguiente módulo de Metasploit: 
+
+
+
 
