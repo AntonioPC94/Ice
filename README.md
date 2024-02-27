@@ -64,10 +64,19 @@ Bien, ya tenemos acceso a la máquina mediante dos vías, pero ahora nos vamos a
 
 Si hacemos un "sysinfo", veremos que la arquitectura del sistema operativo que está corriendo en la máquina objetivo, es de 64 bits. 
 
-Para ganar estabilidad en el sistema objetivo, vamos a migrar el proceso de la "Meterpreter" a uno de 64 bits. Para ello, utilizaremos el siguiente módulo de Metasploit: 
+Para ganar estabilidad en el sistema objetivo, vamos a migrar el proceso de la "Meterpreter" a uno de 64 bits. Para ello, utilizaremos el siguiente módulo de Metasploit: **post/windows/manage/archmigrate**
 
-post/windows/manage/migrate
+El único parámetro que tenemos que modificar en este módulo, es el de la sesión.
 
+![ICE14]()
 
+Una vez lo hayamos modificado, iniciaremos el módulo con "run".
 
+![ICE15]()
+
+Para comprobar que el proceso se ha migrado correctamente, nos iremos de nuevo a la sesión que tenemos abierta en la máquina objetivo y haremos un "sysinfo".
+
+![ICE16]()
+
+La migración se ha efectuado correctamente.
 
