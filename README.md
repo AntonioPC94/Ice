@@ -89,7 +89,7 @@ Una vez los hayamos modificado, iniciaremos el módulo con "run".
 
 ![ICE20](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE20.png)
 
-Nota: La shell que tenemos ahora, no nos hace ser autoridad máxima del sistema, pero veremos qué podemos hacer con ella próximamente.
+Nota: **Explicar una vez haya resuelto la duda que tengo.**
 
 Ahora que tenemos otra shell abierta en el sistema objetivo, vamos a upgradearla a una "Meterpreter" para poder ejecutar el comando "getprivs" y ver si el proceso en el que se ha creado la shell tenemos permisos suficientes para seguir escalando privilegios.
 
