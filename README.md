@@ -62,21 +62,45 @@ Como observamos en la imagen anterior, hemos obtenido shell y hemos conseguido a
 
 Bien, ya tenemos acceso a la máquina mediante dos vías, pero ahora nos vamos a centrar en la segunda shell que hemos conseguido, ya que lo que queremos es llegar a ese "NT AUTHORITY SYSTEM" desde esta.
 
-Si hacemos un "sysinfo", veremos que la arquitectura del sistema operativo que está corriendo en la máquina objetivo, es de 64 bits. 
-
-Para ganar estabilidad en el sistema objetivo, vamos a migrar el proceso de la "Meterpreter", que está en 32 bits, a uno de 64. Para ello, utilizaremos el siguiente módulo de Metasploit: **post/windows/manage/archmigrate**
-
-El único parámetro que tenemos que modificar en este módulo, es el de la sesión.
+A continuación, utilizaremos el módulo de post explotación "suggester" para ver qué exploits podemos aplicar sobre la aplicación vulnerable.
 
 ![ICE14]()
 
-Una vez lo hayamos modificado, iniciaremos el módulo con "run".
+El único parámetro que tenemos que modificar en este módulo, es el de la sesión.
 
 ![ICE15]()
 
-Para comprobar que el proceso se ha migrado correctamente, nos iremos de nuevo a la sesión que tenemos abierta en la máquina objetivo y haremos un "sysinfo".
+Una vez lo hayamos modificado, iniciaremos el módulo con "run".
+
+Como observamos en la siguiente imagen, hemos encontrado 14 exploits que nos servirían para explotar la vulnerabilidad encontrada en la aplicación, pero en este caso, vamos a quedarnos con el segundo que nos aparece en la lista: exploit/windows/local/bypassuac_eventvwr
 
 ![ICE16]()
 
-La migración se ha efectuado correctamente.
+Ahora lo que vamos a hacer, es buscar dicho exploit y vamos a lanzárselo a la aplicación para ver si conseguimos elevar nuestros privilegios en el sistema objetivo.
 
+![ICE17]()
+
+Los dos parámetros que modificaremos, son: SESSION y payload.
+
+![ICE18]()
+![ICE19]()
+
+Una vez lo hayamos modificado, iniciaremos el módulo con "run".
+
+![ICE20]()
+
+Nota: La shell que tenemos ahora, no nos hace ser autoridad máxima del sistema, pero veremos qué podemos hacer con ella próximamente.
+
+Ahora que tenemos otra shell abierta en el sistema objetivo, vamos a upgradearla a una "Meterpreter" para poder ejecutar el comando "getprivs" y ver si el proceso en el que se ha creado la shell tenemos permisos suficientes para seguir escalando privilegios.
+
+Para ello, usaremos el siguiente módulo de Metasploit:
+
+![ICE21]()
+
+Modificamos las opciones pertinentes y lo lanzamos. Una vez lanzado, se nos abrirá una segunda sesión con una "Meterpreter" creada.
+
+![ICE22]()
+
+Ahora tendremos 3 sesiones abiertas:
+
+![ICE23]()
