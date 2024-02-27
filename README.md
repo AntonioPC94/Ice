@@ -109,7 +109,7 @@ Ahora abriremos la nueva shell y ejecutaremos el comando "getprivs" para ver qu�
 
 ![ICE24]()
 
-Como observamos en la imagen anterior, tenemos muchos permisos en la shell, pero el que más nos interesa, es el que se encuentra resaltado que se llama "SeTakeOwnershipPrivilege".
+Como observamos en la imagen anterior, tenemos muchos permisos en la shell, pero el que más nos interesa, es el que se encuentra resaltado que se llama "SeTakeOwnershipPrivilege", ya que este nos permite tomar posesión de archivos u otros objetos (Por ejemplo, un proceso del sistema).
 
 Bien, antes de pasar a la acción, debemos pasar a un proceso que realmente tenga los permisos que necesitamos para interactuar con el servicio lsass, el servicio responsable de la autenticación dentro de Windows. Primero, enumeraremos los procesos usando el comando "ps".
 
