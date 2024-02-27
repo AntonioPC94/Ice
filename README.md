@@ -70,7 +70,7 @@ El único parámetro que tenemos que modificar en este módulo, es el de la sesi
 
 ![ICE15](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE15.png)
 
-Una vez los hayamos modificado, iniciaremos el módulo con "run".
+Una vez lo hayamos modificado, iniciaremos el módulo con "run".
 
 Como observamos en la siguiente imagen, hemos encontrado 14 exploits que nos servirían para explotar la vulnerabilidad encontrada en la aplicación, pero en este caso, vamos a quedarnos con el segundo que nos aparece en la lista: exploit/windows/local/bypassuac_eventvwr
 
@@ -85,7 +85,7 @@ Los dos parámetros que modificaremos, serán: SESSION y payload.
 ![ICE18](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE18.png)
 ![ICE19](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE19.png)
 
-Una vez lo hayamos modificado, iniciaremos el módulo con "run".
+Una vez los hayamos modificado, iniciaremos el módulo con "run".
 
 ![ICE20](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE20.png)
 
