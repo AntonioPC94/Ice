@@ -101,7 +101,7 @@ Modificamos las opciones pertinentes y lo lanzamos. Una vez lanzado, se nos abri
 
 ![ICE22](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE22.png)
 
-Ahora tendremos 3 sesiones abiertas:
+Ahora tendremos 3 sesiones abiertas (4 si tuviésemos abierta la del Eternal Blue, pero como hemos reiniciado la máquina, la hemos perdido):
 
 ![ICE23](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE23.png)
 
