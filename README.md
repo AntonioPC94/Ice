@@ -127,4 +127,4 @@ Ahora, usaremos "getuid" para ver si hemos conseguido escalar privilegios de man
 
 ![ICE28](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE28.png)
 
-Ahora somos NT AUTHORITY\SYSTEM, la mayor autoridad del sistema.
+Ya somos NT AUTHORITY\SYSTEM, la mayor autoridad del sistema.
