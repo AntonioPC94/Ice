@@ -119,7 +119,7 @@ Ahora vamos a buscar un proceso que tenga la misma arquitectura y los mismos per
 
 ![ICE26](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE26.png)
 
-A continuación, vamos a migrar nuestra Meterpreter a dicho proceso utilizando el siguiente comando:
+Una vez localizado, vamos a migrar nuestra Meterpreter a dicho proceso utilizando el siguiente comando:
 
 ![ICE27](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE27.png)
 
