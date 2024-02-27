@@ -104,3 +104,27 @@ Modificamos las opciones pertinentes y lo lanzamos. Una vez lanzado, se nos abri
 Ahora tendremos 3 sesiones abiertas:
 
 ![ICE23]()
+
+Ahora abriremos la nueva shell y ejecutaremos el comando "getprivs" para ver qué permisos tenemos en dicha shell:
+
+![ICE24]()
+
+Como observamos en la imagen anterior, tenemos muchos permisos en la shell, pero el que más nos interesa, es el que se encuentra resaltado que se llama "SeTakeOwnershipPrivilege".
+
+Bien, antes de pasar a la acción, debemos pasar a un proceso que realmente tenga los permisos que necesitamos para interactuar con el servicio lsass, el servicio responsable de la autenticación dentro de Windows. Primero, enumeraremos los procesos usando el comando "ps".
+
+![ICE25]()
+
+Ahora vamos a buscar un proceso que tenga la misma arquitectura y los mismos permisos que el servicio lsass. Por ejemplo, el servicio de impresión nos serviría en este caso a la perfección.
+
+![ICE26]()
+
+A continuación, vamos a migrar nuestra Meterpreter a dicho proceso utilizando el siguiente comando:
+
+![ICE27]()
+
+Ahora, usaremos "getuid" para ver si hemos conseguido escalar privilegios de manera exitosa:
+
+![ICE28]()
+
+Ahora somos NT AUTHORITY\SYSTEM, la mayor autoridad del sistema.
