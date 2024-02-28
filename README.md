@@ -86,7 +86,7 @@ Los dos parámetros que modificaremos, serán: SESSION y payload.
 ![ICE18](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE18.png)
 ![ICE19](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE19.png)
 
-Una vez los hayamos modificado, iniciaremos el módulo con "run".
+Una vez los hayamos modificado, iniciaremos el exploit con "run".
 
 ![ICE20](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE20.png)
 
