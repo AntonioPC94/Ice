@@ -130,7 +130,7 @@ Ahora, usaremos "getuid" para ver si hemos conseguido escalar privilegios de man
 
 Ya somos NT AUTHORITY\SYSTEM, la mayor autoridad del sistema.
 
-Ahora que hemos conseguidos permisos de administración, vamos a intentar conseguir las credenciales del sistema con Kiwi. Para ello, lo cargaremos en Metasploit introduciendo el siguiente comando:
+Ahora que hemos conseguidos permisos de administración, vamos a intentar conseguir las credenciales del sistema con Kiwi. Para ello, lo cargaremos en Meterpreter introduciendo el siguiente comando:
 
 ![ICE29]()
 
