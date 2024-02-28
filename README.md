@@ -19,7 +19,7 @@ A continuación, lanzaremos de nuevo NMAP pero cargando su módulo de detección
 ![ICE4](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE4.png)
 ![ICE5](https://github.com/AntonioPC94/Ice/blob/e241e129e20484f79c258ac7f73b58805b0e9329/img/ICE5.png)
 
-Como se observa en las imágenes anteriores, dos de los tres servicios mencionados son vulnerables. El CVE de la vulnerabilidad localizada en el protocolo SMB, es el CVE-2017-0143 y el de la vulnerabilidad localizada en el programa Icecast streaming media server, es el CVE-2007-6750.
+Como se observa en las imágenes anteriores, dos de los tres servicios mencionados son vulnerables. El CVE de la vulnerabilidad localizada en el protocolo SMB, es el CVE-2017-0143 y el de la vulnerabilidad localizada en el servidor HTTP donde se aloja la aplicación Icecast, es el CVE-2007-6750.
 
 Ahora vamos a iniciar Metasploit para comenzar a explotar las distintas vulnerabilidades que hemos encontrado en el sistema objetivo.
 
@@ -41,7 +41,7 @@ Como observamos en la imagen anterior, hemos obtenido shell. Ahora haremos un "w
 
 Somos "nt authority\system", la mayor autoridad del sistema.
 
-A continuación, vamos a mandar la sesión que hemos obtenido a segundo plano para ver qué podemos hacer ahora con la aplicación vulnerable que encontramos anteriormente.
+A continuación, vamos a mandar la sesión que hemos obtenido a segundo plano y vamos a ver si la aplicación que se encuentra dentro del servidor HTTP vulnerable, también es vulnerable o no.
 
 Primeramente, vamos a buscar en la página "cvedetails" información sobre la aplicación Icecast. Como observamos en la siguiente imagen, existe una vulnerabilidad cuyo CVE es CVE-2004-1561, que te permite realizar un desbordamiento de búfer en la máquina vulnerable.
 
