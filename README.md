@@ -63,7 +63,7 @@ Como observamos en la imagen anterior, hemos obtenido shell y hemos conseguido a
 
 Bien, ya tenemos acceso a la máquina mediante dos vías, pero ahora nos vamos a centrar en la segunda shell que hemos conseguido, ya que lo que queremos es llegar a ser "NT AUTHORITY SYSTEM" desde esta.
 
-A continuación, utilizaremos el módulo de post explotación "suggester" para ver qué exploits podemos aplicar sobre la aplicación vulnerable.
+A continuación, utilizaremos el módulo de post explotación "suggester" para ver qué módulos podemos aplicar sobre la aplicación vulnerable.
 
 ![ICE14](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE14.png)
 
