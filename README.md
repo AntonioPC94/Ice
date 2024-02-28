@@ -11,6 +11,7 @@ Lo primero que haremos, será lanzar un NMAP para ver qué puertos tiene abierto
 En la imagen anterior podemos ver varios puertos abiertos, los más interesantes a primera vista podrían ser:
 
 - Puerto 445: Servicio SMB
+- Puerto 3389: Servicio RDP
 - Puerto 8000: Servidor Icecast streaming media server
 
 A continuación, lanzaremos de nuevo NMAP pero cargando su módulo de detección de vulnerabilidades (vuln) para intentar encontrar alguna vulnerabilidad en los servicios anteriormente mencionados.
@@ -18,7 +19,7 @@ A continuación, lanzaremos de nuevo NMAP pero cargando su módulo de detección
 ![ICE4](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE4.png)
 ![ICE5](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE5.png)
 
-Como se observa en las imágenes anteriores, los servicios mencionados son vulnerables. El CVE de la vulnerabilidad localizada en el protocolo SMB, es el CVE-2017-0143 y el de la vulnerabilidad localizada en el programa Icecast streaming media server, es el CVE-2007-6750.
+Como se observa en las imágenes anteriores, dos de los tres servicios mencionados son vulnerables. El CVE de la vulnerabilidad localizada en el protocolo SMB, es el CVE-2017-0143 y el de la vulnerabilidad localizada en el programa Icecast streaming media server, es el CVE-2007-6750.
 
 Ahora vamos a iniciar Metasploit para comenzar a explotar las distintas vulnerabilidades que hemos encontrado en el sistema objetivo.
 
