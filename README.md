@@ -132,15 +132,29 @@ Ya somos NT AUTHORITY\SYSTEM, la mayor autoridad del sistema.
 
 Ahora que hemos conseguidos permisos de administración, vamos a intentar conseguir las credenciales del sistema con Kiwi. Para ello, lo cargaremos en Meterpreter introduciendo el siguiente comando:
 
-![ICE29]()
+![ICE29](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE29.png)
 
 Una vez hayamos cargado el plugin, usaremos la ayuda para ver qué comando de Kiwi podríamos usar para poder obtener todas las credenciales del sistema.
 
-![ICE30]()
+![ICE30](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE30.png)
 
 Como observamos en la imagen anterior, el comando "creds_all" nos devolverá todas las credenciales de los distintos usuarios del sistema.
 
-![ICE31]()
+![ICE31](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE31.png)
 
+Por último, vamos a ver algunos comandos que nos serán útiles tras haber explotado y escalado privilegios en el sistema:
 
+# Hashdump
+
+![ICE32](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE32.png)
+
+Con este comando podríamos obtener los hashes de las contraseñas de los distintos usuarios y podríamos romperlos con Hydra o Hashcat.
+
+# Screenshare
+
+![ICE33](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE33.png)
+
+Con este comando podríamos ver en tiempo real todo lo que está sucediendo en la máquina objetivo.
+
+Nota: Es muy inestable.
 
