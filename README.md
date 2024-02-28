@@ -148,7 +148,7 @@ Por último, vamos a ver algunos comandos que nos serán útiles tras haber expl
 
 ![ICE32](https://github.com/AntonioPC94/Ice/blob/ebf2bbbd9f4dbbc2bac078520e0ca71f591f1c70/img/ICE32.png)
 
-Con este comando podríamos obtener los hashes de las contraseñas de los distintos usuarios y podríamos romperlos con Hydra o Hashcat.
+Con este comando obtenemos los hashes de las contraseñas de los distintos usuarios y podríamos romperlos con Hydra o Hashcat.
 
 # Screenshare
 
