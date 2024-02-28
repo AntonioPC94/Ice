@@ -128,3 +128,18 @@ Ahora, usaremos "getuid" para ver si hemos conseguido escalar privilegios de man
 ![ICE28](https://github.com/AntonioPC94/Ice/blob/b495337a9e7770cd03a4a4d080b19a85a1a6b770/img/ICE28.png)
 
 Ya somos NT AUTHORITY\SYSTEM, la mayor autoridad del sistema.
+
+Ahora que hemos conseguidos permisos de administración, vamos a intentar conseguir las credenciales del sistema con Kiwi. Para ello, lo cargaremos en Metasploit introduciendo el siguiente comando:
+
+![ICE29]()
+
+Una vez hayamos cargado el plugin, usaremos la ayuda para ver qué comando de Kiwi podríamos usar para poder obtener todas las credenciales del sistema.
+
+![ICE30]()
+
+Como observamos en la imagen anterior, el comando "creds_all" nos devolverá todas las credenciales de los distintos usuarios del sistema.
+
+![ICE31]()
+
+
+
